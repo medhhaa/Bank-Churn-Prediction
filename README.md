@@ -12,8 +12,24 @@ A business manager of a consumer credit card portfolio is facing a steady loss o
 Customer attrition (or churn) erodes fee income, reduces cross-sell opportunities, and increases acquisition costs. By predicting which customers are most likely to churn, the bank can proactively engage high-risk segments with personalized offers and service enhancements to lower churn and boost lifetime value.
 
 ## Data Source
-- **Kaggle “Credit Card Customers”** by Sakshi Goyal (10,000 records, 18 features)  
+- **Kaggle “Credit Card Customers”** (10,000 records, 18 features)  
   https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers/data
+
+  
+## Findings
+- **Baseline churn rate:** 16.07% of customers have already left.  
+- **Top predictors of churn:**  
+  1. **Months_Inactive_12_mon** – customers inactive >4 months are 3× more likely to leave  
+  2. **Total_Relationship_Count** – holding fewer than 2 products increases churn risk by ~30%  
+  3. **Contacts_Count_12_mon** – fewer than 2 contacts per year correlates with a 25% higher attrition rate  
+- **Model performance (imbalanced test set):**  
+  - Accuracy: 83%  
+  - Precision (churn): 48%  
+  - Recall (churn): 71%  
+- **Model performance (after upsampling train):**  
+  - Accuracy: 91%  
+  - Precision: 92%  
+  - Recall: 89%  
 
 ## Notebook Contents
 1. **Data Ingestion & Cleaning**  
