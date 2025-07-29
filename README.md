@@ -55,4 +55,4 @@ Customer attrition (or churn) erodes fee income, reduces cross-sell opportunitie
 - `pandas`, `numpy`, `scikit-learn`  
 - `plotly`, `scikit-plot`, `matplotlib`
 
-## Note: You can interact with the interactive plotly plots in Colab notebook, but they are not rendered on github. The link is included in the ipynb file.
+ Note: You can interact with the interactive plotly plots in Colab notebook, but they are not rendered on github. The link is included in the ipynb file.
